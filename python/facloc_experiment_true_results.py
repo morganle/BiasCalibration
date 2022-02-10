@@ -13,11 +13,9 @@ import matplotlib.pyplot as plt
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
-#from facloc import facloc
-from experiment_functions import experiment
 
 from tqdm import tqdm
-from numpy.random import SeedSequence, default_rng
+from numpy.random import SeedSequence
 
 seed = 12345
 seed = SeedSequence(seed)
@@ -130,6 +128,3 @@ for setting in settings:
     ax1.legend([ax1,ax2],['1','2'])
     
     plt.show()
-    
-    
-    
